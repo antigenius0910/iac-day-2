@@ -5,6 +5,7 @@ projects:
   dir: demo-atlantis/password
   autoplan:
     when_modified: ["**/*.hcl", "**/*.tf*"]
+  allowed_overrides: [apply_requirements, workflow]
 
 - name: central-iam-roles
   dir: central/basic/iam-roles
